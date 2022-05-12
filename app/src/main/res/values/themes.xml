@@ -15,8 +15,5 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:colorBackground">@color/blue_dark</item>
     </style>
-    <style name="Theme" parent="@android:style/TextAppearance">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
 
 </resources>

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.ihm.zoopedia.quizz.QuizzActivity;
+import com.ihm.zoopedia.quizz.QuizzMenuActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoQuizz(View view) {
-        Intent intent = new Intent(this, QuizzActivity.class);
+        Intent intent = new Intent(this, QuizzMenuActivity.class);
         startActivity(intent);
     }
 
