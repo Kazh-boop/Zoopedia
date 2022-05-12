@@ -9,20 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21177fac-185c-438c-ba4e-8d78371b3ed1" name="Changes" comment="first commit, create project">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/quizz/Clause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/quizz/Questions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/quizz/QuizzActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/quizz/Statement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/quizz_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="21177fac-185c-438c-ba4e-8d78371b3ed1" name="Changes" comment="push branch, make new activity and some class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ihm/zoopedia/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/quizz_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/quizz_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -143,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652337383416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push branch, make new activity and some class">
+      <created>1652341725498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652341725499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit, create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit, create project" />
+    <MESSAGE value="push branch, make new activity and some class" />
+    <option name="LAST_COMMIT_MESSAGE" value="push branch, make new activity and some class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
