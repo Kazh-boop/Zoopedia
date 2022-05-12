@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <Button
+                android:id="@+id/zooMap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/pokedex"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="CARTE ZOO"/>
+        <Button
+                android:id="@+id/photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/pokedex"
+                android:layout_below="@+id/zooMap"
+                android:layout_alignParentLeft="true"
+                android:layout_center="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="PHOTO"/>
+        <ImageButton
+                android:id="@+id/pokedex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/notebook-icon.jpg"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/quizz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_center="true" />
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <Button
+                android:id="@+id/preorder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/time"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="ACHAT / RESERVATION"/>
+        <Button
+                android:id="@+id/info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/parameters"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="INFORMATIONS ZOO"/>
+        <Button
+                android:id="@+id/time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/preorder"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="HORAIRES"/>
+        <Button
+                android:id="@+id/parameters"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/info"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:text="PARAMETRES"/>
+    </RelativeLayout>
+
+</RelativeLayout>
