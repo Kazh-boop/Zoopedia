@@ -11,8 +11,13 @@ public class mainScreen {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // RELATIVE LAYOUT
+        layout1 = new RelativeLayout(this);
+        layout2 = new RelativeLayout(this);
+
         // CARTE DU ZOO
         final Button map = (Button) findViewById(R.id.zooMap);
+        map.setId("mapZoo");
         map.setOnClickListener(new View.OnClickListener() {
            public void onClick(View view) {
                Intent openMap = new Intent(getApplicationContext(),carte.class);
@@ -77,6 +82,12 @@ public class mainScreen {
                 startActivity(openParameters);
             }
         });
+
+        // SET UP DES LAYOUTS POUR Y INSERER LES BOUTONS
+        RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams q = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        // layout1.addView(map,photo,pokedex);
+        // layout2.addView(achats,info,time,parameters);
 
     }
 
