@@ -12,15 +12,15 @@ public class Statement {
     private String text;
 
     /** image de l'enonce */
-    @DrawableRes
-    private int image;
+    //@DrawableRes
+    private String image;
 
     /**
      * Constructeur
      * @param text texte de l'enonce
      * @param image image de l'enonce
      */
-    public Statement(String text, @DrawableRes int image) {
+    public Statement(String text, String image) {
         this.text = text;
         this.image = image;
     }
@@ -37,8 +37,9 @@ public class Statement {
      * getter de l'image de l'enonce
      * @return image
      */
-    @DrawableRes
-    public int getImage() {
+    //@DrawableRes
+    public String getImage() {
         return image;
     }
+
 }
