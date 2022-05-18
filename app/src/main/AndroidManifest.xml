@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Zoopedia">
         <activity
-                android:name=".Horaires"
+                android:name=".HorairesAdapter"
                 android:exported="true"/>
         <activity
                 android:name=".MainActivity"
