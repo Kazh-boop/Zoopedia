@@ -92,6 +92,13 @@
                 android:layout_height="match_parent"
                 android:text="@string/DROITS D'AUTEUR"
                 android:textSize="32dp" />
+        <TextView
+                android:id="@+id/blue-team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Équipe bleue"
+                android:textSize="24dp"
+                android:clickable="true" />
 
     </LinearLayout>
 
