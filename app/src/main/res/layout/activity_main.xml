@@ -5,14 +5,114 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        tools:context=".mainScreen">
+    <LinearLayout
+            android:id="@+id/linearLayoutGlobal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                    <ImageButton
+                            android:id="@+id/zooMap"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="50dp"
+                            android:layout_alignParentTop="true"
+                            android:src="@android:drawable/Exemple-Boutons_Final-Map.png"/>
+                    <ImageButton
+                            android:id="@+id/photo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_center="true"
+                            android:layout_marginTop="50dp"
+                            android:layout_alignParentTop="true"
+                            android:src="@android:drawable/Exemple-Boutons_Final-Photo.png"/>
+
+                </LinearLayout>
+
+                <ImageButton
+                        android:id="@+id/pokedex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@android:drawable/Exemple-Boutons_Final-Pokedex.png"/>
+
+        </LinearLayout>
+
+        <ImageButton
+                android:id="@+id/quizz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_center="true"
+                android:src="@android:drawable/Exemple-Boutons_Final-Quizz.png"/>
+
+        <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+            <ImageButton
+                    android:id="@+id/preorder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/Exemple-Boutons_Final-Achats.png"/>
+
+            <ImageButton
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/Exemple-Boutons_Final-Horaires.png"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+            <ImageButton
+                    android:id="@+id/info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/Exemple-Boutons_Final-Zoo.png"/>
+
+            <ImageButton
+                    android:id="@+id/parameters"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@android:drawable/Exemple-Boutons_Final-Params.png"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
