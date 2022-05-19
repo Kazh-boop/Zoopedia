@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class Carte extends AppCompatActivity {
     private Button AfficherMasquerAnimaux;
     private Button AfficherMasquerInfluence;
     private Button Retour;
