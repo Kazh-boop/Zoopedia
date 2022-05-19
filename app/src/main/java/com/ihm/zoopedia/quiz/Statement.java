@@ -1,6 +1,4 @@
-package com.ihm.zoopedia.quizz;
-
-import androidx.annotation.DrawableRes;
+package com.ihm.zoopedia.quiz;
 
 /**
  * Classe représentant un enonce

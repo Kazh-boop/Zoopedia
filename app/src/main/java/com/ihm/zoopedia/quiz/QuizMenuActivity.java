@@ -1,4 +1,4 @@
-package com.ihm.zoopedia.quizz;
+package com.ihm.zoopedia.quiz;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,18 +7,18 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import com.ihm.zoopedia.R;
 
-public class QuizzMenuActivity extends AppCompatActivity {
+public class QuizMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quizz_menu_activity);
+        setContentView(R.layout.quiz_menu_activity);
 
         Button startButton = (Button) findViewById(R.id.start);
         Button backButton = (Button) findViewById(R.id.back);
 
         startButton.setOnClickListener(view -> {
-            startActivity(new Intent(this, QuizzActivity.class));
+            startActivity(new Intent(this, QuizActivity.class));
         });
 
         backButton.setOnClickListener(view -> {
@@ -28,7 +28,7 @@ public class QuizzMenuActivity extends AppCompatActivity {
     }
 
     public void gotoQuizz(View view) {
-        Intent intent = new Intent(this, QuizzActivity.class);
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
 

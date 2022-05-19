@@ -1,4 +1,4 @@
-package com.ihm.zoopedia.quizz;
+package com.ihm.zoopedia.quiz;
 
 
 import java.util.ArrayList;
