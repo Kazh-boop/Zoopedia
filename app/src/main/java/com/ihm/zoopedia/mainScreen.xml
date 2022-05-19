@@ -20,8 +20,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="CARTE ZOO"/>
-        <Button
+                android:src="@android:drawable/Exemple-Boutons_Final-Map.png"/>
+        <ImageButton
                 android:id="@+id/photo"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -31,28 +31,29 @@
                 android:layout_center="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="PHOTO"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Photo.png"/>
         <ImageButton
                 android:id="@+id/pokedex"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:src="@android:drawable/notebook-icon.jpg"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Pokedex.png"/>
     </RelativeLayout>
 
-    <Button
+    <ImageButton
             android:id="@+id/quizz"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_center="true" />
+            android:layout_center="true"
+            android:src="@android:drawable/Exemple-Boutons_Final-Quizz.png"/>
 
     <RelativeLayout
             android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-        <Button
+        <ImageButton
                 android:id="@+id/preorder"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -60,8 +61,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="ACHAT / RESERVATION"/>
-        <Button
+                android:src="@android:drawable/Exemple-Boutons_Final-Achats.png"/>
+        <ImageButton
                 android:id="@+id/info"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -69,8 +70,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="INFORMATIONS ZOO"/>
-        <Button
+                android:src="@android:drawable/Exemple-Boutons_Final-Zoo.png"/>
+        <ImageButton
                 android:id="@+id/time"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -78,8 +79,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="HORAIRES"/>
-        <Button
+                android:src="@android:drawable/Exemple-Boutons_Final-Horaires.png"/>
+        <ImageButton
                 android:id="@+id/parameters"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +88,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:text="PARAMETRES"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Params.png"/>
     </RelativeLayout>
 
 </RelativeLayout>
