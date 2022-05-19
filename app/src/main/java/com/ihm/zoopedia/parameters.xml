@@ -14,6 +14,9 @@
             android:paddingRight="16dp"
             android:orientation="vertical" >
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
             <TextView
                 android:id="@+id/title-notif"
                 android:layout_width="match_parent"
@@ -31,6 +34,8 @@
                 android:layout_height="match_parent"
                 android:text="@string/Notifications par e-mail" />
 
+            <View
+                    android:layout_width="match_parent" android:layout_height="1dp"/>
             <TextView
                 android:id="@+id/title-autorisations"
                 android:layout_width="match_parent"
