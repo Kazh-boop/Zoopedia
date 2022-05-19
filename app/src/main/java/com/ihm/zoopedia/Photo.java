@@ -23,7 +23,7 @@ public class Photo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Photo);
+        setContentView(R.layout.activity_main);
 
         CaptureImage = findViewById(R.id.CaptureImage);
         Retour = findViewById(R.id.Retour);
@@ -58,12 +58,12 @@ public class Photo extends AppCompatActivity {
 
         if (requestCode == REQUEST_ID_IMAGE_CAPTURE) {
             if (resultCode == RESULT_OK) {
-                Bitmap bp = (Bitmap) data.getExtras().get("data");
-                this.imageView.setImageBitmap(bp);
+                Bitmap picture = (Bitmap) data.getExtras().get("data");
+                this.imageView.setImageBitmap(picture);
             } else if (resultCode == RESULT_CANCELED) {
-                Toast.makeText(this, "Action canceled", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Action annulée", Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(this, "Action Failed", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Action échouée", Toast.LENGTH_LONG).show();
             }
         }
     }
