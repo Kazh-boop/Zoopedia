@@ -16,8 +16,7 @@ public class mainScreen {
         layout2 = new RelativeLayout(this);
 
         // CARTE DU ZOO
-        final ImageButton map = (Button) findViewById(R.id.zooMap);
-        map.setId("mapZoo");
+        final ImageButton map = (ImageButton) findViewById(R.id.zooMap);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,8 +25,8 @@ public class mainScreen {
             }
         });
         // APPAREIL PHOTO POUR QR CODES
-        final ImageButton photo = (Button) findViewById(R.id.photo);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton photo = (ImageButton) findViewById(R.id.photo);
+        photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openPhoto = new Intent(getApplicationContext(),photo.class);
@@ -36,7 +35,7 @@ public class mainScreen {
         });
         // POKEDEX
         final ImageButton pokedex = (ImageButton) findViewById(R.id.pokedex);
-        map.setOnClickListener(new View.OnClickListener() {
+        pokedex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openPokedex = new Intent(getApplicationContext(),pokedex.class);
@@ -45,8 +44,8 @@ public class mainScreen {
         });
 
         // QUIZZ
-        final ImageButton quizz = (Button) findViewById(R.id.quizz);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton quizz = (ImageButton) findViewById(R.id.quizz);
+        quizz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openQuizz = new Intent(getApplicationContext(),QuizzMenuActivity.class);
@@ -55,8 +54,8 @@ public class mainScreen {
         });
 
         // ACHATS ET RESERVATIONS
-        final ImageButton achats = (Button) findViewById(R.id.preorder);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton achats = (ImageButton) findViewById(R.id.preorder);
+        achats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openPreorder = new Intent(getApplicationContext(),preorder.class);
@@ -64,8 +63,8 @@ public class mainScreen {
             }
         });
         // INFORMATIONS SUR LE ZOO (BROCHURE)
-        final ImageButton infos = (Button) findViewById(R.id.info);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton infos = (ImageButton) findViewById(R.id.info);
+        infos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openInfo = new Intent(getApplicationContext(),info.class);
@@ -73,8 +72,8 @@ public class mainScreen {
             }
         });
         // HORAIRES
-        final ImageButton time = (Button) findViewById(R.id.time);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton time = (ImageButton) findViewById(R.id.time);
+        time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openTime = new Intent(getApplicationContext(),time.class);
@@ -82,8 +81,8 @@ public class mainScreen {
             }
         });
         // PARAMETRES
-        final ImageButton parameters = (Button) findViewById(R.id.parameters);
-        map.setOnClickListener(new View.OnClickListener() {
+        final ImageButton parameters = (ImageButton) findViewById(R.id.parameters);
+        parameters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openParameters = new Intent(getApplicationContext(),parameters.class);

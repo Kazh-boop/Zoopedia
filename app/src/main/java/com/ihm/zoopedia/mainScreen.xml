@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-        <Button
+        <ImageButton
                 android:id="@+id/zooMap"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -25,7 +25,6 @@
                 android:id="@+id/photo"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/pokedex"
                 android:layout_below="@+id/zooMap"
                 android:layout_alignParentLeft="true"
                 android:layout_center="true"
