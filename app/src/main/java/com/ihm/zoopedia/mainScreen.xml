@@ -13,6 +13,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
+        <ImageButton
+                android:id="@+id/zooMap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/pokedex"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/Exemple-Boutons_Final-Map.png"/>
+        <ImageButton
+                android:id="@+id/photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zooMap"
+                android:layout_alignParentLeft="true"
+                android:layout_center="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/Exemple-Boutons_Final-Photo.png"/>
+        <ImageButton
+                android:id="@+id/pokedex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/Exemple-Boutons_Final-Pokedex.png"/>
     </RelativeLayout>
 
     <ImageButton
@@ -20,8 +46,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_center="true"
-            android:src="@drawable/quizz" android:minHeight="32dp"
-            tools:ignore="SpeakableTextPresentCheck"/>
+            android:src="@android:drawable/Exemple-Boutons_Final-Quizz.png"/>
+
     <RelativeLayout
             android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
@@ -35,7 +61,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/achats"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Achats.png"/>
         <ImageButton
                 android:id="@+id/info"
                 android:layout_width="fill_parent"
@@ -44,7 +70,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/map_final"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Zoo.png"/>
         <ImageButton
                 android:id="@+id/time"
                 android:layout_width="fill_parent"
@@ -53,7 +79,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/horaires"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Horaires.png"/>
         <ImageButton
                 android:id="@+id/parameters"
                 android:layout_width="fill_parent"
@@ -62,26 +88,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/parametres"/>
+                android:src="@android:drawable/Exemple-Boutons_Final-Params.png"/>
     </RelativeLayout>
-    <ImageButton
-            android:id="@+id/pokedex"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pokedex" tools:ignore="SpeakableTextPresentCheck"
-            android:layout_marginTop="312dp" android:layout_marginRight="8dp"/>
-    <ImageButton
-            android:id="@+id/photo"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_center="true"
-            android:layout_marginTop="378dp"
-            android:src="@drawable/photo" tools:ignore="SpeakableTextPresentCheck" android:layout_marginLeft="8dp"/>
-    <ImageButton
-            android:id="@+id/zooMap"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="368dp"
-            android:src="@drawable/map_final" android:layout_marginLeft="31dp"/>
 
 </RelativeLayout>

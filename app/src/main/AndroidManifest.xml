@@ -24,7 +24,7 @@
         <activity android:name=".Pokedex"
                   android:exported="true"/>
         <activity
-                android:name=".MainActivity"
+                android:name=".mainScreen"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

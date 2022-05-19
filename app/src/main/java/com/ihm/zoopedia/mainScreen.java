@@ -1,8 +1,4 @@
 package com.ihm.zoopedia;
-import android.content.Intent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -16,15 +12,15 @@ public class mainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // RELATIVE LAYOUT
-        RelativeLayout layout1 = new RelativeLayout(this);
-        RelativeLayout layout2 = new RelativeLayout(this);
+        layout1 = new RelativeLayout(this);
+        layout2 = new RelativeLayout(this);
 
         // CARTE DU ZOO
         final ImageButton map = (ImageButton) findViewById(R.id.zooMap);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openMap = new Intent(getApplicationContext(),Carte.class);
+                Intent openMap = new Intent(getApplicationContext(),carteZoo.class);
                 finish();
             }
         });
@@ -33,7 +29,7 @@ public class mainScreen extends AppCompatActivity {
         photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openPhoto = new Intent(getApplicationContext(),Photo.class);
+                Intent openPhoto = new Intent(getApplicationContext(),photo.class);
                 finish();
             }
         });
@@ -42,7 +38,7 @@ public class mainScreen extends AppCompatActivity {
         pokedex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openPokedex = new Intent(getApplicationContext(),Pokedex.class);
+                Intent openPokedex = new Intent(getApplicationContext(),pokedex.class);
                 finish();
             }
         });
@@ -52,7 +48,7 @@ public class mainScreen extends AppCompatActivity {
         quizz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openQuizz = new Intent(getApplicationContext(),Quizz.class);
+                Intent openQuizz = new Intent(getApplicationContext(),QuizzMenuActivity.class);
                 finish();
             }
         });
@@ -62,7 +58,7 @@ public class mainScreen extends AppCompatActivity {
         achats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openPreorder = new Intent(getApplicationContext(),Achat.class);
+                Intent openPreorder = new Intent(getApplicationContext(),preorder.class);
                 finish();
             }
         });
@@ -80,7 +76,7 @@ public class mainScreen extends AppCompatActivity {
         time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openTime = new Intent(getApplicationContext(),HorairesAdapter.class);
+                Intent openTime = new Intent(getApplicationContext(),time.class);
                 finish();
             }
         });
@@ -89,7 +85,7 @@ public class mainScreen extends AppCompatActivity {
         parameters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openParameters = new Intent(getApplicationContext(),Parameters.class);
+                Intent openParameters = new Intent(getApplicationContext(),parameters.class);
                 finish();
             }
         });
