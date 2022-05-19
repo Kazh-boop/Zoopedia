@@ -12,8 +12,8 @@ public class mainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // RELATIVE LAYOUT
-        layout1 = new RelativeLayout(this);
-        layout2 = new RelativeLayout(this);
+        // layout1 = new RelativeLayout(this);
+        // layout2 = new RelativeLayout(this);
 
         // CARTE DU ZOO
         final ImageButton map = (ImageButton) findViewById(R.id.zooMap);
@@ -91,8 +91,8 @@ public class mainScreen extends AppCompatActivity {
         });
 
         // SET UP DES LAYOUTS POUR Y INSERER LES BOUTONS
-        RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        RelativeLayout.LayoutParams q = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        // RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        // RelativeLayout.LayoutParams q = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         // layout1.addView(map,photo,pokedex);
         // layout2.addView(achats,info,time,parameters);
 
