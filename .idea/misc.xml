@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_clause.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/quizz_activity.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/button_clause.xml" value="0.1693840579710145" />
+        <entry key="app/src/main/res/layout/quizz_activity.xml" value="0.26328800988875156" />
         <entry key="app/src/main/res/layout/quizz_menu_activity.xml" value="0.1693840579710145" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
