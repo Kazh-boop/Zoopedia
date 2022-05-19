@@ -27,15 +27,18 @@
                 android:id="@+id/notif-push"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Notifications push" />
+                android:text="@string/Notifications push"
+                android:textSize="24dp"/>
             <CheckBox
                 android:id="@+id/notif-email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Notifications par e-mail" />
+                android:text="@string/Notifications par e-mail"
+                android:textSize="24dp"/>
 
             <View
-                    android:layout_width="match_parent" android:layout_height="1dp"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
             <TextView
                 android:id="@+id/title-autorisations"
                 android:layout_width="match_parent"
@@ -62,6 +65,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/Messages SMS" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            <TextView
+                    android:id="@+id/title-build"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/BUILD"
+                    android:textSize="32dp" />
+            <TextView
+                    android:id="@+id/build-version"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/1.0.0"
+                    android:textSize="24dp" />
+
+            <View
+
     </LinearLayout>
 
 

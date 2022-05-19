@@ -3,7 +3,7 @@ package com.ihm.zoopedia;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Parameters extends AppCompatActivity {
+public class parameters extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

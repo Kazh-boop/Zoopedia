@@ -5,14 +5,95 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        tools:context=".parameters">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        <TextView
+                android:id="@+id/title-notif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/NOTIFICATIONS"
+                android:textSize="32dp"/>
+        <CheckBox
+                android:id="@+id/notif-push"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Notifications push"
+                android:textSize="24dp"/>
+        <CheckBox
+                android:id="@+id/notif-email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Notifications par e-mail"
+                android:textSize="24dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        <TextView
+                android:id="@+id/title-autorisations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/AUTORISATIONS"
+                android:textSize="32dp"/>
+        <CheckBox
+                android:id="@+id/autorisations-photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Appareil photo" />
+        <CheckBox
+                android:id="@+id/autorisations-localisation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Localisation" />
+        <CheckBox
+                android:id="@+id/autorisations-appels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Appels téléphoniques" />
+        <CheckBox
+                android:id="@+id/autorisations-messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Messages SMS" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        <TextView
+                android:id="@+id/title-build"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/BUILD"
+                android:textSize="32dp" />
+        <TextView
+                android:id="@+id/build-version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/1.0.0"
+                android:textSize="24dp" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        <TextView
+                android:id="@+id/copyright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/DROITS D'AUTEUR"
+                android:textSize="32dp" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
