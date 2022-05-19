@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">zoopedia</string>
+
+    <!-- Page des horaires -->
+    <!-- Strings indicatives -->
+    <string name="horaires_zoo_titre">Horaires du Zoo</string>
+    <string name="horaires_text_ouverture">Ouverture</string>
+    <string name="horaires_text_fermeture">Fermeture</string>
+    <string name="horaires_restaurants_titre">Horaires des restaurants</string>
+    <string name="horaires_text_restaurant1">Restaurant 1</string>
+    <string name="horaires_text_restaurant2">Restaurant 2</string>
+    <string name="horaires_spectacles_titre">Horaires des spectacles</string>
+
+
+    <!-- Strings fonctionnelles -->
+    <string name="horaires_zoo_ouverture">09:30</string>
+    <string name="horaires_zoo_fermeture">19:30</string>
+    <string name="horaires_restaurant1_ouverture">11:00</string>
+    <string name="horaires_restaurant1_fermeture">15:00</string>
+    <string name="horaires_restaurant2_ouverture">11:00</string>
+    <string name="horaires_restaurant2_fermeture">14:30</string>
+    <string name="horaires_nom_spectacle1">Spectacle 1</string>
+    <string name="horaires_nom_spectacle2">Spectacle 2</string>
+    <string name="horaires_nom_spectacle3">Spectacle 3</string>
+    <string name="horaires_nom_spectacle4">Spectacle 4</string>
+    <string name="horaires_spectacle1">10:30</string>
+    <string name="horaires_spectacle2">12:00</string>
+    <string name="horaires_spectacle3">15:00</string>
+    <string name="horaires_spectacle4">17:30</string>
+
 </resources>

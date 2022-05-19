@@ -14,4 +14,6 @@
     <color name="blue_clause">#FF13A2CE</color>
     <color name="yellow_clause">#FFE5CE45</color>
     <color name="green_clause">#FF13CE66</color>
+    <color name="steelblue">#4682B4</color>
+    <color name="lightgrey">#A0A0A0</color>
 </resources>

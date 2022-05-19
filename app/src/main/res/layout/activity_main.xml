@@ -14,5 +14,14 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+
+            android:text="Horaires"
+            android:onClick="horaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="138dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="157dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

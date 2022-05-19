@@ -1,0 +1,13 @@
+com/ihm/zoopedia/BuildConfig.java
+ com.ihm.zoopedia.BuildConfig
+com/ihm/zoopedia/MainActivity.java
+ com.ihm.zoopedia.MainActivity
+com/ihm/zoopedia/Animal.java
+ com.ihm.zoopedia.Animal
+com/ihm/zoopedia/Pokedex.java
+ com.ihm.zoopedia.Pokedex
+ com.ihm.zoopedia.Pokedex$1
+ com.ihm.zoopedia.Pokedex$2
+com/ihm/zoopedia/Animal_view.java
+ com.ihm.zoopedia.Animal_view
+ com.ihm.zoopedia.Animal_view$1
