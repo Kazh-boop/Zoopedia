@@ -15,6 +15,14 @@
         <activity
                 android:name=".HorairesAdapter"
                 android:exported="true"/>
+        <activity android:name=".Carte"
+                  android:exported="true"/>
+        <activity android:name=".Parameters"
+                  android:exported="true"/>
+        <activity android:name=".Photo"
+                  android:exported="true"/>
+        <activity android:name=".Pokedex"
+                  android:exported="true"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true">
@@ -30,5 +38,4 @@
 
         </activity>
     </application>
-
 </manifest>
