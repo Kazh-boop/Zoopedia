@@ -16,7 +16,7 @@ public class Carte extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Carte);
+        setContentView(R.layout.activity_carte);
         AfficherMasquerAnimaux = findViewById(R.id.AfficherMasquerAnimaux);
         AfficherMasquerInfluence = findViewById(R.id.AfficherMasquerInfluence);
         Retour = findViewById(R.id.Retour);
@@ -59,7 +59,7 @@ public class Carte extends AppCompatActivity {
         Retour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 finish();
             }
         });

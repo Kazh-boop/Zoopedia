@@ -40,7 +40,7 @@ public class Photo extends AppCompatActivity {
         Retour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), mainScreen.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 finish();
             }
         });

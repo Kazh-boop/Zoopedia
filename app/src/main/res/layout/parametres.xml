@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".parameters">
+        tools:context=".Parameters">
 
     <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,48 +15,48 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/title-notif"
+                android:id="@+id/title_notif"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/NOTIFICATIONS"
                 android:textSize="32dp"/>
             <CheckBox
-                android:id="@+id/notif-push"
+                android:id="@+id/notif_push"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Notifications push" />
+                android:text="@string/Notifications_push" />
             <CheckBox
-                android:id="@+id/notif-email"
+                android:id="@+id/notif_email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Notifications par e-mail" />
+                android:text="@string/Notifications_email" />
 
             <TextView
-                android:id="@+id/title-autorisations"
+                android:id="@+id/title_autorisations"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/AUTORISATIONS"
                 android:textSize="32dp"/>
             <CheckBox
-                android:id="@+id/autorisations-photo"
+                android:id="@+id/autorisations_photo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Appareil photo" />
+                android:text="@string/Appareil_photo" />
             <CheckBox
-                android:id="@+id/autorisations-localisation"
+                android:id="@+id/autorisations_localisation"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/Localisation" />
             <CheckBox
-                android:id="@+id/autorisations-appels"
+                android:id="@+id/autorisations_appels"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Appels téléphoniques" />
+                android:text="@string/Appels_telephoniques" />
             <CheckBox
-                android:id="@+id/autorisations-messages"
+                android:id="@+id/autorisations_messages"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Messages SMS" />
+                android:text="@string/Messages_SMS" />
     </LinearLayout>
 
 

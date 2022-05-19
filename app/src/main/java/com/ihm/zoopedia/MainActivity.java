@@ -7,8 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import com.ihm.zoopedia.quiz.QuizMenuActivity;
 
-public class mainScreen extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class mainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent openMap = new Intent(getApplicationContext(),Carte.class);
-                finish();
+                startActivity(openMap);
             }
         });
         // APPAREIL PHOTO POUR QR CODES
@@ -34,7 +35,7 @@ public class mainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent openPhoto = new Intent(getApplicationContext(),Photo.class);
-                finish();
+                startActivity(openPhoto);
             }
         });
         // POKEDEX
@@ -43,7 +44,7 @@ public class mainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent openPokedex = new Intent(getApplicationContext(),Pokedex.class);
-                finish();
+                startActivity(openPokedex);
             }
         });
 
@@ -52,11 +53,11 @@ public class mainScreen extends AppCompatActivity {
         quizz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openQuizz = new Intent(getApplicationContext(),Quizz.class);
-                finish();
+                Intent openQuizz = new Intent(getApplicationContext(), QuizMenuActivity.class);
+                startActivity(openQuizz);
             }
         });
-
+        /*
         // ACHATS ET RESERVATIONS
         final ImageButton achats = (ImageButton) findViewById(R.id.preorder);
         achats.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +67,8 @@ public class mainScreen extends AppCompatActivity {
                 finish();
             }
         });
+        */
+        /*
         // INFORMATIONS SUR LE ZOO (BROCHURE)
         final ImageButton infos = (ImageButton) findViewById(R.id.info);
         infos.setOnClickListener(new View.OnClickListener() {
@@ -75,13 +78,14 @@ public class mainScreen extends AppCompatActivity {
                 finish();
             }
         });
+        */
         // HORAIRES
         final ImageButton time = (ImageButton) findViewById(R.id.time);
         time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent openTime = new Intent(getApplicationContext(),HorairesAdapter.class);
-                finish();
+                startActivity(openTime);
             }
         });
         // PARAMETRES
@@ -90,13 +94,13 @@ public class mainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent openParameters = new Intent(getApplicationContext(),Parameters.class);
-                finish();
+                startActivity(openParameters);
             }
         });
 
         // SET UP DES LAYOUTS POUR Y INSERER LES BOUTONS
-        RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        RelativeLayout.LayoutParams q = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        //RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        //RelativeLayout.LayoutParams q = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         // layout1.addView(map,photo,pokedex);
         // layout2.addView(achats,info,time,parameters);
 

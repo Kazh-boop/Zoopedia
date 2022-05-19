@@ -28,4 +28,13 @@
     <string name="horaires_spectacle3">15:00</string>
     <string name="horaires_spectacle4">17:30</string>
 
+    <string name="NOTIFICATIONS"></string>
+    <string name="AUTORISATIONS"></string>
+    <string name="Notifications_push"></string>
+    <string name="Notifications_email"></string>
+    <string name="Appareil_photo"></string>
+    <string name="Localisation"></string>
+    <string name="Appels_telephoniques"></string>
+    <string name="Messages_SMS"></string>
+
 </resources>

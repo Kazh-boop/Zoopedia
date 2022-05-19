@@ -81,7 +81,7 @@
                 android:enabled="false"
                 android:text="Question suivante"
                 android:backgroundTint="@color/white"
-                android:textColor="@color/grey_disable"/>
+                android:textColor="@color/lightgrey"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "statement": "Quel animal est le plus grand dans le zoo ?",
+    "clauses": [
+      ["Le suricate", false],
+      ["L'ours brun", false],
+      ["Le pingouin", false],
+      ["La girafe", true]
+    ]
+  },
+  {
+    "id": 2,
+    "statement": "Dans quel type d'écosystème vivent les Gorilles ?",
+    "clauses": [
+      ["La jungle", true],
+      ["La savane", false],
+      ["A New-York", false],
+      ["Sur la mer", false]
+    ]
+  },
+  {
+    "id": 3,
+    "statement": "Quel est le type de régime des suricates ?",
+    "clauses": [
+      ["Omnivores", true],
+      ["Herbivores", false],
+      ["Carnivores", false],
+      ["Piscivores", false]
+    ]
+  },
+  {
+    "id": 4,
+    "statement": "Parmi ces animaux, qui est l'intru ?",
+    "clauses": [
+      ["Panthère", false],
+      ["Lion", false],
+      ["Python", true],
+      ["Jaguar", false]
+    ]
+  },
+  {
+    "id": 5,
+    "statement": "Comment appelle-t-on la zone de visite des reptiles ?",
+    "clauses": [
+      ["Un reptilium", false],
+      ["Un serpentium", false],
+      ["Un vivarium", true],
+      ["Un vivirium", false]
+    ]
+  },
+  {
+    "id": 6,
+    "statement": "Dans quelle région du monde peut-on trouver des gorilles ?",
+    "clauses": [
+      ["Europe du Nord", false],
+      ["Centre Afrique", true],
+      ["Antarctique", false],
+      ["Océanie", false]
+    ]
+  },
+  {
+    "id": 7,
+    "statement": "Lequel de ces animaux consomme le plus de nourriture ?",
+    "clauses": [
+      ["Le Weta Geant", false],
+      ["La taupe", false],
+      ["L'anaconda", false],
+      ["La baleine bleue", true]
+    ]
+  },
+  {
+    "id": 8,
+    "statement": "Laquelle de ces espèces est disparue ?",
+    "clauses": [
+      ["Le Quagga", true],
+      ["L'ours polaire", false],
+      ["Le tigre du bengal", false],
+      ["L'éléphant d'Asie", false]
+    ]
+  },
+  {
+    "id": 9,
+    "statement": "Quel animal est le plus visité dans le zoo ?",
+    "clauses": [
+      ["Edouard le jaguar", false],
+      ["Achille le gorille", true],
+      ["Anna l'anaconda", false],
+      ["Antares la girafe", false]
+    ]
+  },
+  {
+    "id": 10,
+    "statement": "Quel animal est le plus gentil du zoo ?",
+    "clauses": [
+      ["Astigmate le suricate", false],
+      ["Emilien le babouin", false],
+      ["Gisèle la gazelle", false],
+      ["Poséidon le dauphin", true]
+    ]
+  }
+]

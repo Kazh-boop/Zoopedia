@@ -16,4 +16,6 @@
     <color name="green_clause">#FF13CE66</color>
     <color name="steelblue">#4682B4</color>
     <color name="lightgrey">#A0A0A0</color>
+    <color name="green_right_answer">#FF00FF00</color>
+    <color name="red_wrong_answer">#FFFF0000</color>
 </resources>

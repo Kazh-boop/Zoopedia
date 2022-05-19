@@ -166,7 +166,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private void setButtonNextEnable(boolean enable) {
         if (!enable) {
             button_next_question.setEnabled(false);
-            button_next_question.setTextColor(ResourcesCompat.getColor(getResources(), R.color.grey_disable, null));
+            button_next_question.setTextColor(ResourcesCompat.getColor(getResources(), R.color.lightgrey, null));
         } else {
             button_next_question.setEnabled(true);
             button_next_question.setTextColor(ResourcesCompat.getColor(getResources(), R.color.blue_dark, null));

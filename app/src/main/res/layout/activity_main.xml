@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:orientation="vertical"
-                tools:context=".mainScreen">
+                tools:context=".MainActivity">
 
-    <RelativeLayout
-            android:id="@+id/relativeLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
 
-    </RelativeLayout>
 
     <ImageButton
             android:id="@+id/quizz"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_center="true"
-            android:src="@drawable/quizz" android:minHeight="32dp"
+            android:src="@drawable/quiz" android:minHeight="32dp"
             tools:ignore="SpeakableTextPresentCheck"/>
-    <RelativeLayout
-            android:id="@+id/relativeLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+
 
         <ImageButton
                 android:id="@+id/preorder"
@@ -63,7 +54,6 @@
                 android:layout_marginTop="50dp"
                 android:layout_alignParentTop="true"
                 android:src="@drawable/parametres"/>
-    </RelativeLayout>
     <ImageButton
             android:id="@+id/pokedex"
             android:layout_width="fill_parent"
@@ -74,7 +64,6 @@
             android:id="@+id/photo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_center="true"
             android:layout_marginTop="378dp"
             android:src="@drawable/photo" tools:ignore="SpeakableTextPresentCheck" android:layout_marginLeft="8dp"/>
     <ImageButton
@@ -84,4 +73,4 @@
             android:layout_marginTop="368dp"
             android:src="@drawable/map_final" android:layout_marginLeft="31dp"/>
 
-</RelativeLayout>
+</LinearLayout>
