@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.res.ResourcesCompat;
 import com.ihm.zoopedia.R;
 import org.json.JSONArray;
@@ -16,33 +17,39 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Page principale du quiz
+ * @author Baptiste Lelievre
+ */
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // liste des questions
     private ArrayList<Question> questions = new ArrayList<>();
+
+    // nombre maximale de question
     private final int maxQuestion = 10;
 
+    // tableau permettant de recuperer les questions dans le fichier questions.json
     private JSONArray jsonArray;
 
+    // permet de designer la question courante / id de la question courant
     private int currentQuestion = 1, idQuestion = 0;
 
+    // elements de la view
     private TextView statement, textScore, textCurrentQuestion;
     private Button clause1, clause2, clause3, clause4;
-
     private Button button_next_question;
-
     private Button button_menu;
 
+    // score du joueur
     private int score;
-
-    private String stringCurrentQuestion;
-
-    private String stringTextScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_activity);
 
+        // recuperation des id sur la vue et set un listener
         button_menu = findViewById(R.id.button_menu);
         button_menu.setOnClickListener(this);
 
@@ -69,13 +76,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         String jsonString = new Scanner(inputStream).useDelimiter("\\A").next();
         try {
             jsonArray = new JSONArray(jsonString);
-            for (int i=0; i < maxQuestion; i++)
+            for (int i=0; i < maxQuestion; i++) // on recupere chaque question et on l'ajoute à l'ArrayList
                 questions.add(loadQuestion(i+1));
 
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
 
+        // affichage des infos de base sur la vue
         statement.setText(questions.get(idQuestion).getStatementText());
         clause1.setText(questions.get(idQuestion).getClause(0).getText());
         clause2.setText(questions.get(idQuestion).getClause(1).getText());
@@ -114,6 +122,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         return question;
     }
 
+    /**
+     * Permet de passer à la question suivante
+     */
     protected void nextQuestion() {
         currentQuestion++;
         if (currentQuestion > 10) {
@@ -137,18 +148,37 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * Permet de verifier la validite de la reponse clique
+     * @param button
+     * @param id
+     */
     protected void checkAnswer(Button button, int id) {
+        ConstraintLayout layout = findViewById(R.id.layoutClause);
         setButtonClauseEnable(false);
-        if (questions.get(idQuestion).getClause(id).isAnswer()) {
+        if (questions.get(idQuestion).getClause(id).isAnswer()) { // bonne reponse
             score++;
-            textScore.setText("Score : "+score+" / "+maxQuestion);
+            textScore.setText("Score : " + score + " / " + maxQuestion);
             button.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.green_right_answer, null));
-        } else {
-            button.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.red_wrong_answer, null));
+            for (int i=0; i<layout.getChildCount(); i++) {
+                if (!layout.getChildAt(i).equals(button))
+                    layout.getChildAt(i).setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.red_wrong_answer, null));
+            }
+        } else { // mauvaise reponse
+            for (int i=0; i<layout.getChildCount(); i++) {
+                if (questions.get(idQuestion).getClause(i).isAnswer())
+                    layout.getChildAt(i).setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.green_right_answer, null));
+                else
+                    layout.getChildAt(i).setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.red_wrong_answer, null));
+            }
         }
         setButtonNextEnable(true);
     }
 
+    /**
+     * Permet d'autoriser les boutons des clauses d'etre cliquer
+     * @param enable
+     */
     private void setButtonClauseEnable(boolean enable) {
         if (!enable) {
             clause1.setEnabled(false);
@@ -163,6 +193,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * Permet d'autoriser le bouton suivant d'etre cliquer
+     * @param enable
+     */
     private void setButtonNextEnable(boolean enable) {
         if (!enable) {
             button_next_question.setEnabled(false);
@@ -173,6 +207,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**
+     * remettre les couleurs des boutons des clauses par défaut
+     */
     private void setDefaultButtonColorClause() {
         clause1.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.red_clause, null));
         clause2.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.blue_clause, null));
@@ -180,6 +217,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         clause4.setBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.green_clause, null));
     }
 
+
+    /**
+     * gere les actions des elements de la vue
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
